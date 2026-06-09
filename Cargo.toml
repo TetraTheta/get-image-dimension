@@ -1,11 +1,11 @@
 [package]
 name = "get-image-dimension"
-version = "1.1.0"
-edition = "2021"
+version = "1.1.1"
+edition = "2024"
 
 [dependencies]
-clap = { version = "4.5.23", features = ["derive"] }
-image = "0.25.5"
+clap = { version = "4.6.1", features = ["derive"] }
+image = "0.25.10"
 
 [profile.release]
 codegen-units = 1
