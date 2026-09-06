@@ -24,7 +24,7 @@ fn main() {
     None => {
       eprintln!("\x1b[31mERROR\x1b[0m No file path is provided.");
       process::exit(1)
-    }
+    },
   };
 
   let img = match image::open(&file_path) {
@@ -32,7 +32,7 @@ fn main() {
     Err(_) => {
       eprintln!("\x1b[31mERROR\x1b[0m Could not open the image file or the file is not a valid image.");
       process::exit(1)
-    }
+    },
   };
 
   let dimension = img.dimensions();
